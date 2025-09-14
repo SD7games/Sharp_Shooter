@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public int enemiesLeft = 0;
     int enemiesKilled = 0;
 
-    const string ENEMIES_LEFT_STRING = "Enemies left: ";
+    const string ENEMIES_AND_GATES_LEFT_STRING = "Enemies and Gates left: ";
     const string ENEMIRS_KILLED = "Enemies killed: ";
 
     public bool isAWinUI = false;
@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     public void AdjustEnemiesLeft(int amount)
     {
         enemiesLeft += amount;
-        enemiesLeftText.text = ENEMIES_LEFT_STRING + enemiesLeft.ToString();
+        enemiesLeftText.text = ENEMIES_AND_GATES_LEFT_STRING + enemiesLeft.ToString();
 
         if (enemiesLeft <= 0)
         {
