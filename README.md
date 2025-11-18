@@ -92,8 +92,19 @@ Playable WebGL version:
 
 ---
 
-## 📸 Screenshots (optional)  
-_Add gameplay images or GIFs here if you want._
+📸 Screenshots
+🔭 Sniper Aiming (ADS)
+<p align="center"> <img src="Shooter Sniper ADS.png" width="420" /> </p>
+💥 Shooting, VFX & Combat
+<p align="center"> <img src="Shooter VFX.png" width="420" /> </p>
+🎮 Pause Menu
+<p align="center"> <img src="ShooterMenu.png" width="420" /> </p>
+👾 Enemies & Navigation Mesh Movement
+<p align="center"> <img src="Shooter Enemy walk.png" width="420" /> </p>
+☠️ Game Over Screen
+<p align="center"> <img src="Shooter GameEnd Menu.png" width="420" /> </p>
+⚙️ Options Menu (Volume & Sensitivity)
+<p align="center"> <img src="Shooter menu 2.png" width="420" /> </p>
 
 ---
 
