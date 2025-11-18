@@ -1,6 +1,6 @@
-# Sharp Shooter  
-A small first-person action shooter built in Unity as a personal gameplay project.  
-The game features multiple weapons, enemy waves, destructible spawn portals, loot drops and polished FPS mechanics such as recoil, ADS accuracy, sprinting and camera shake.
+# 🔫 Sharp Shooter  
+A fast-paced first-person action shooter built in Unity.  
+The game features multiple weapons, enemy waves, destructible portals, loot drops and polished FPS mechanics such as ADS accuracy, recoil, sprinting and camera shake.
 
 Playable WebGL version:  
 👉 **https://sd7games.itch.io/sharp-shooter**
@@ -10,44 +10,43 @@ Playable WebGL version:
 ## 🎮 Features
 
 ### ✅ Completed & Implemented  
-- **Multiple Weapons** with ScriptableObject configuration:
+- **Modular Weapon System** (ScriptableObject-based):  
   - damage  
   - fire rate  
-  - accuracy and hip-fire spread  
-  - ADS precision (no spread when aiming)  
+  - hip-fire spread  
+  - ADS precision (no spread while aiming)  
   - magazine size  
   - reload time  
   - recoil pattern  
-- **Recoil & Camera Shake** for each weapon.  
-- **ADS System (Aim Down Sights):**  
-  hip-fire is inaccurate, ADS is precise.  
-- **Sprint System** with speed boost and custom audio.  
-- **Loot Boxes:**  
+- **Recoil & Camera Shake** tuned per weapon.  
+- **ADS System (Aim Down Sights)** for precise firing.  
+- **Sprint System** with speed boost and audio feedback.  
+- **Loot Boxes:**
   - ammo packs  
   - health packs  
 - **Enemy & Portal System:**  
   - portals continuously spawn enemies  
-  - portals and enemies have different HP  
+  - portals and enemies have independent HP  
   - destroying all portals completes the mission  
-  - full victory/defeat state logic  
+  - full victory/defeat flow  
 
 ### 🤖 Enemy AI (NavMesh-based)  
-- **Unity NavMesh Agents** used for pathfinding.  
-- Enemies **actively chase the player** by calculating the shortest available route.  
-- AI automatically:
+- **NavMesh Agents** for pathfinding.  
+- Enemies actively chase the player across the level.  
+- AI automatically:  
   - goes around obstacles  
-  - uses stairs and multi-level navigation  
-  - updates the path dynamically when the player moves  
-- Simple state machine: **idle → chase → attack**.  
-- Designed to be lightweight for WebGL.  
+  - uses ramps and multi-level navigation  
+  - recalculates path dynamically  
+- Lightweight FSM: **idle → chase → attack**.  
+- Optimized for WebGL.
 
-### 🖥 UI & Polish  
+### 🖥 UI & Visual Polish  
 - Full HUD: ammo counter, health bar, hit feedback.  
-- Settings popup (audio, sensitivity options).  
-- Custom animations: idle, firing, reload, ADS.  
-- Custom audio: gunshots, reloads, footsteps, sprint.  
+- Settings menu (volume, mouse sensitivity).  
+- Custom weapon animations (idle, fire, reload, ADS).  
+- Custom audio (shots, reloads, footsteps, sprint).  
 - **Post-processing:** bloom, vignette, color grading.  
-- Clean project architecture based on low coupling and ScriptableObjects.
+- Clean architecture with low coupling and ScriptableObjects.
 
 ---
 
@@ -55,12 +54,12 @@ Playable WebGL version:
 - Unity  
 - C#  
 - ScriptableObjects for weapon data  
+- NavMesh & NavMesh Agents  
 - Animator state machines  
 - Event-driven UI  
-- Unity NavMesh & NavMesh Agents  
-- Post-Processing Stack v2  
-- Camera-based recoil & shake system  
-- Simple enemy FSM (chase logic)
+- Post-processing effects  
+- Camera-based recoil & shake  
+- Simple enemy FSM
 
 ---
 
@@ -79,38 +78,43 @@ Playable WebGL version:
     /SO (WeaponData)
     /Materials
     /Scenes
-
 ```
+
+---
 
 ## 🎮 How to Play  
 1. Play the browser version:  
    👉 https://sd7games.itch.io/sharp-shooter  
 2. Destroy all portals to stop enemy waves.  
 3. Collect ammo and health from loot boxes.  
-4. Use ADS for accurate shooting.  
+4. Use ADS for accurate firing.  
 5. Sprint to reposition quickly.  
 
 ---
 
-📸 Screenshots
-🔭 Sniper Aiming (ADS)
+## 📸 Screenshots
+
+### 🔭 Sniper Aiming (ADS)
 <p align="center"> <img src="Shooter Sniper ADS.png" width="420" /> </p>
-💥 Shooting, VFX & Combat
+
+### 💥 Shooting, VFX & Combat
 <p align="center"> <img src="Shooter VFX.png" width="420" /> </p>
-🎮 Pause Menu
+
+### 🎮 Pause Menu
 <p align="center"> <img src="ShooterMenu.png" width="420" /> </p>
-👾 Enemies & Navigation Mesh Movement
+
+### 👾 Enemies & Navigation Movement
 <p align="center"> <img src="Shooter Enemy walk.png" width="420" /> </p>
-☠️ Game Over Screen
+
+### ☠️ Game Over Screen
 <p align="center"> <img src="Shooter GameEnd Menu.png" width="420" /> </p>
-⚙️ Options Menu (Volume & Sensitivity)
+
+### ⚙️ Options Menu
 <p align="center"> <img src="Shooter menu 2.png" width="420" /> </p>
 
 ---
 
 ## 👨‍💻 Developer  
 **Oleksandr Tokarev** — Unity & C# Game Developer based in Finland.  
-This project was created to practice and improve core FPS gameplay programming.
-
+Focused on gameplay programming and FPS mechanics.  
 Open to work and collaboration.
-
